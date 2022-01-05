@@ -29,7 +29,6 @@ public:
 int N;
 int main(){
     cin>>N;
-    cin.sync();
     Trie* root=new Trie();
     for (int i=0;i<N;i++){
         char c;
