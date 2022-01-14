@@ -1,4 +1,4 @@
-//dfs
+//dfs二分图
 #include<cstring>
 #include<iostream>
 #include<algorithm>
