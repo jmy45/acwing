@@ -14,7 +14,7 @@ void merge(vector<PII>&segs){
         if (ed<seg.first){
             if (st!=-2e9)
                 res.push_back({st,ed});
-                st=seg.first,ed=seg.second;
+            st=seg.first,ed=seg.second;
         }
         else
             ed=max(ed,seg.second);
