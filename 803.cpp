@@ -4,7 +4,6 @@
 using namespace std;
 typedef pair<int,int> PII;
 const int N=100010;
-int n;
 vector<PII> segs;
 void merge(vector<PII>&segs){
     vector<PII> res;
@@ -23,6 +22,7 @@ void merge(vector<PII>&segs){
     segs=res;
 }
 int main(){
+    int n;
     cin>>n;
     for (int i=0;i<n;i++){
         int l,r;
