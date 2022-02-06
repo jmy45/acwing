@@ -14,9 +14,6 @@ int main(){
             for (int k=V2;k>=v2;k--)
                 f[j][k]=max(f[j][k],f[j-v1][k-v2]+w);
     }
-    int k=V2;
-    while (k&&f[V1][k-1]==f[V1][V2])
-        k--;
     cout<<f[V1][V2]<<endl;
     return 0;
 }
