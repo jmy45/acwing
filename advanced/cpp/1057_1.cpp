@@ -14,6 +14,7 @@ int main(){
     for (int i=1;i<=N;i++){
         cin>>x;
         memcpy(p,dp,sizeof(dp));
+        //此处是因为买入时不增加交易次数，所以是可行状态。
         dp[0][1]=max(dp[0][1],p[0][0]-x);
         for (int j=1;j<=k;j++){
             dp[j][0]=max(dp[j][0],p[j-1][1]+x);
