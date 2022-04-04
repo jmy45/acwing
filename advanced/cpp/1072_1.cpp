@@ -25,7 +25,7 @@ PII dfs(int r,int p){
 int main(){
     int n,a,b,c;
     cin>>n;
-    for (int i=1;i<=n;i++){
+    for (int i=1;i<=n-1;i++){
         cin>>a>>b>>c;
         nei[a][b]=c;
         nei[b][a]=c;
