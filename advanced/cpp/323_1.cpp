@@ -32,7 +32,7 @@ int main(){
     char ch;
     while (cin>>n){
         idx=0;
-        memset(vis,INF,sizeof vis);
+        memset(vis,0x3f,sizeof vis);
         memset(ha,-1,sizeof ha);
         memset(arr,0,sizeof arr);
         for (int i=0;i<n;i++){
