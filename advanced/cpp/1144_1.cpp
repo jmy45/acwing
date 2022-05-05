@@ -11,7 +11,7 @@ struct edge{
     }
 }edges[M*2];
 int find(int x){
-    return p[x]==x?x:find(p[x]);
+    return p[x]=p[x]==x?x:find(p[x]);
 }
 void un(int a,int b){
     int x=find(a),y=find(b);
